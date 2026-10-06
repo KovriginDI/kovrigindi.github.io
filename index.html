@@ -1,0 +1,98 @@
+<!doctype html>
+<!--
+  Home page for Google's OAuth branding and the Play listing (plan §17.4, ADR-008). A template: site/build.py fills
+  Offernote, offernote.app@gmail.com and Individual Entrepreneur Danila Kovrigin, Tbilisi, Georgia from site/site.json and writes site/dist/index.html.
+  No external fonts, scripts or analytics. Screenshots use the fictional demo data only.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offernote: your job applications, tracked from Gmail</title>
+<meta name="description" content="Offernote is an Android app that turns recruiting emails in Gmail into a list of your job applications. Everything stays on your phone.">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <svg viewBox="18 18 72 72" aria-hidden="true">
+      <defs>
+        <linearGradient id="icon-bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#4B44A0"/><stop offset="1" stop-color="#272259"/>
+        </linearGradient>
+      </defs>
+      <rect x="18" y="18" width="72" height="72" fill="url(#icon-bg)"/>
+      <g transform="translate(54 54) scale(0.84) translate(-54 -54)">
+        <path d="M38 31 H63 L74 42 V73 A4 4 0 0 1 70 77 H38 A4 4 0 0 1 34 73 V35 A4 4 0 0 1 38 31 Z" fill="#fff"/>
+        <path d="M63 31 V38 A4 4 0 0 0 67 42 H74 Z" fill="#B9A6FF"/>
+        <rect x="41" y="49" width="22" height="3.8" rx="1.9" fill="#A3ACBA"/>
+        <rect x="41" y="56.5" width="15" height="3.8" rx="1.9" fill="#A3ACBA"/>
+        <circle cx="73" cy="71" r="11" fill="#F5BD48"/>
+        <path d="M68 71.3 L71.5 74.8 L78.2 67.8" fill="none" stroke="#1E2530" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </svg>
+    <a class="name" href="./" aria-current="page">Offernote</a>
+    <nav><a href="./">Home</a><a href="privacy.html">Privacy</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <h1>Your job applications, tracked from Gmail</h1>
+      <p class="lead">Offernote is an Android app that finds the recruiting emails in your Gmail and turns them into
+        a list of your applications: where you applied, who replied, when the interview is, and who to follow up with.
+        Everything is read and kept on your phone.</p>
+      <div class="actions">
+        <a class="button tonal" href="privacy.html">How we handle your data</a>
+      </div>
+      <p class="muted">In a closed beta on Android. To join, write to
+        <a href="mailto:offernote.app@gmail.com">offernote.app@gmail.com</a>.</p>
+    </div>
+    <div class="shot-wrap">
+      <img class="shot" src="assets/home.png" width="540" height="1200"
+        alt="The app's Home screen with updates to check, an interview without a date and two follow-ups">
+    </div>
+  </section>
+
+  <h2>What it does</h2>
+  <div class="features">
+    <div class="card">
+      <div class="tile" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z"/></svg></div>
+      <h3>No manual entry</h3>
+      <p>Applications, replies, interviews and offers are found in your email and kept up to date. You can add your own too.</p>
+    </div>
+    <div class="card">
+      <div class="tile" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM9 8V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9z"/></svg></div>
+      <h3>Stays on your phone</h3>
+      <p>Read-only Gmail access. No server, no cloud AI, no analytics. Nothing is uploaded.</p>
+    </div>
+    <div class="card">
+      <div class="tile" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg></div>
+      <h3>Reminders and stats</h3>
+      <p>Know when to follow up, never miss an interview, and see where your search stalls.</p>
+    </div>
+  </div>
+
+  <h2>Every update shows why</h2>
+  <div class="hero">
+    <div>
+      <p>When the app marks an application as rejected or schedules an interview, it shows the line from the email it
+        came from and how sure it is. If it is unsure, it asks you first. Every automatic decision can be fixed in a tap,
+        and your edits always win.</p>
+      <p class="muted">Gmail access is read-only: the app cannot send, delete or change your emails. You can disconnect it
+        and delete everything at any time in Settings.</p>
+    </div>
+    <div class="shot-wrap">
+      <img class="shot" src="assets/details.png" width="540" height="1200" loading="lazy"
+        alt="An application's details with the quoted email line under Why we think so">
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Offernote · Individual Entrepreneur Danila Kovrigin, Tbilisi, Georgia · <a href="privacy.html">Privacy policy</a> ·
+    <a href="mailto:offernote.app@gmail.com">offernote.app@gmail.com</a></div>
+</footer>
+</body>
+</html>
